@@ -1,11 +1,57 @@
 
 git init - creates or initialises empty git repository in current folder or location, creates hidden folder name ".git"
+
 git config --global user.name "vasu" - you need to give only once; it will create username "vasu"
+
 git config --global user.email "sricloud1981@gmail.com" - it will create with this email
 
 **** above commands we do only once...
-git status - it will display all the files status like untracked files, tracked, commited etc..
 
-git add -A  - it will add all the files from work place to stagging area
+git status - it will display all the files status like untracked files, tracked, commited etc..
+		- all files will be in red color i.e not added to stagging area
+
+git add -A  - it will add all the files and folders from work place to staging area
 		- in stagging area we can modify the data once it commited i.e sent to git we can modify data
-	
+		- all files will be in green color i.e they are added to staging area
+
+git add <filename.extension> - only this specific file will be added from work place to staging area
+
+gid add *.java - all java files will be added from work place to staging area
+
+git add <folder name> - specific given folder will be added from work place to staging area
+
+git commit -m "Your msg" - this will commit or save data into local repository i.e git; 
+				- git comit -m "this is my first commit"
+				- all files will turn into white color i.e commited or saved into git
+
+**** if we check status by git status - nothing will come
+--------------------------------------------------------------------------
+
+GITHUB
+------
+
+after login into github..
+create new repository by clicking + beside profile (top right corner)
+normally we give project name for the repository
+after setup we get link :
+https://github.com/vasugithub1981/OpenCart_HybridFrameWkProject.git
+
+---------------------------------
+
+git remote add origin "https://github.com/vasugithub1981/OpenCart_HybridFrameWkProject.git" 
+
+git push -u origin master
+
+(master is the default branch code)
+(-u - will not ask username and pwd pushes directly to master)
+(The above commands will push data from local repository to GITHUB (REmote repository))
+
+----------------------------------------------------------------------------------------------------------------
+
+2nd round if any changes made in code
+------------------------------------
+git status - it will show in red what changes have done
+git add -A
+git commit -m "MSG"
+git push origin master
+
