@@ -51,7 +51,18 @@ git push -u origin master
 2nd round if any changes made in code
 ------------------------------------
 git status - it will show in red what changes have done
-git add -A
-git commit -m "MSG"
+git add -A 
+git commit -m "This is my 2nd commit"
 git push origin master
+
+-------------------------------------------------------------------------------------------------------------------
+
+IF you want to get file from GITHUB to work place
+
+Select location and create a file in github by clicking new file and save as "XXX.java"
+and write some sample code - after that bottom there is option - "COMMIT NEW FILE" click
+
+to get the file from GITUB to Work place i.e ecllipse
+
+git pull - this command will pull the details to ecllipse
 
