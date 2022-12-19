@@ -1,0 +1,11 @@
+
+git init - creates or initialises empty git repository in current folder or location, creates hidden folder name ".git"
+git config --global user.name "vasu" - you need to give only once; it will create username "vasu"
+git config --global user.email "sricloud1981@gmail.com" - it will create with this email
+
+**** above commands we do only once...
+git status - it will display all the files status like untracked files, tracked, commited etc..
+
+git add -A  - it will add all the files from work place to stagging area
+		- in stagging area we can modify the data once it commited i.e sent to git we can modify data
+	

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Configuration status="WARN">
+ 
+<!-- Property Section -  we specify PATH-->
+<Properties>
+		<Property name="basePath">./logs</Property>
+		<!-- in above line, ./ refers to current proj location, we have logs folder, basepath is where we want to store log file -->
+	</Properties>
+
+<!-- Appenders Section -  we genrate logs in console window or seperate file; files better for sharing-->
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+    </Console>
+       <RollingFile name="File" fileName="${basePath}/automation.log" filePattern="${basePath}/automation-%d{yyyy-MM-dd}.log">
+     <!-- basepath is log folder; inside it automation is file loading time stamps; .log is file extension-->
+     <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+      <SizeBasedTriggeringPolicy size="50000" />
+      <!-- above 50000 is size of the log file-->
+   </RollingFile>
+    
+  </Appenders>
+  
+  <!-- Loggers Section - it describes what type of log to generate-->
+  <Loggers>
+    <Root level="info"><!-- Here you can use multiple log levels All < Trace < Debug < Info < Warn < Error < Fatal < Off -->
+    <!-- just change above info or debug or warn, no where to change-->
+      <AppenderRef ref="File"/>  <!-- <AppenderRef ref="Console"/> - where to generate file or console, can give both too-->
+    </Root>
+  </Loggers>
+  
+</Configuration>
