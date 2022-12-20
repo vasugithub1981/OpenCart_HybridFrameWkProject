@@ -43,6 +43,7 @@ git remote add origin "https://github.com/vasugithub1981/OpenCart_HybridFrameWkP
 git push -u origin master
 
 (master is the default branch code)
+******** in real time team lead will create own branch name we push in to our own branch name instead of "MASTER"
 (-u - will not ask username and pwd pushes directly to master)
 (The above commands will push data from local repository to GITHUB (REmote repository))
 
@@ -66,3 +67,16 @@ to get the file from GITUB to Work place i.e ecllipse
 
 git pull - this command will pull the details to ecllipse
 
+
+----------------------------------------------------------------------
+
+clone
+
+if we need to get entire project from GITHUB to work place "ECLLIPSE" we use "CLONE"
+--no need of all the above commands
+git clone "<git hub repository URL>" <FOlder name> 
+
+which folder in local system we need project
+It will dump the entire project into the folder
+
+got to Ecclipse ->File -> import -> existing projects in to workplace -> next -> browse that file...
