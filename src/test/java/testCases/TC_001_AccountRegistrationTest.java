@@ -24,7 +24,7 @@ public class TC_001_AccountRegistrationTest extends BaseClass
 		{
 				
 		HomePage hp=new HomePage(driver);
-		hp.clickMyAccount();
+		HomePage.clickMyAccount();
 		logger.info("Clicked on My ACcount");
 		
 		hp.clickRegister(); 

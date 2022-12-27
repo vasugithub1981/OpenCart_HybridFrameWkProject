@@ -5,36 +5,35 @@
   <version>0.0.1-SNAPSHOT</version>
   
 <!-- Below are Plugins used for Git n Git hub; Need to add these before Dependencies-->
-  <build>
+ <build>
     <pluginManagement>
-      <plugins>
-      
-<!-- Below is maven surefire plugin used for running of project-->        
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M7</version>
-          <configuration>
-			<suiteXmlFiles>
-				<suiteXmlFile>Master.xml</suiteXmlFile>
-				<!-- you can multiple XML files here...-->
-			</suiteXmlFiles>            
-          </configuration>
-
-        </plugin>
-
-
-<!-- Below is Maven Compiler Plugin used for compiling of project-->        
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.10.1</version>          
-        </plugin>
+    
+  		<plugins>
+  
+  			  <plugin>
+			       <groupId>org.apache.maven.plugins</groupId>
+			       <artifactId>maven-surefire-plugin</artifactId>
+			       <version>3.0.0-M7</version>
+			        <configuration>
+		          	<suiteXmlFiles>
+		          	      		 <suiteXmlFile>master.xml</suiteXmlFile>
+		          	 </suiteXmlFiles>
+		          
+		          </configuration>
+			   </plugin>
+        
+		 	 <plugin>
+		          <groupId>org.apache.maven.plugins</groupId>
+		          <artifactId>maven-compiler-plugin</artifactId>
+		          <version>3.10.1</version>
+		      </plugin>
         
         
-      </plugins>
-    </pluginManagement>
-  </build>
+  		</plugins>
+  
+ 	 </pluginManagement>
+ </build>
+  
   
   
   <dependencies>
@@ -43,7 +42,14 @@
 
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 
-
+<!-- I aded below dependency as Im getting below error-->
+<!--Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.10.1:testCompile (default-testCompile) on project OpenCart_Hy -->
+<dependency>
+    <groupId>org.projectlombok</groupId>
+    <artifactId>lombok</artifactId>
+    <version>1.18.24</version>
+    <scope>provided</scope>
+</dependency>
 
 <dependency>
 

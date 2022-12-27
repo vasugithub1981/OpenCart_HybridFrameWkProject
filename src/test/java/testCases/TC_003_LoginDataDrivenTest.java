@@ -17,7 +17,7 @@ public class TC_003_LoginDataDrivenTest extends BaseClass {
 
 		try {
 			HomePage hp = new HomePage(driver);
-			hp.clickMyAccount();
+			HomePage.clickMyAccount();
 			hp.clickLogin();
 
 			LoginPage lp = new LoginPage(driver);
