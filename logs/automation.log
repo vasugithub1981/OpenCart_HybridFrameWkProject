@@ -242,3 +242,44 @@
 10:28:32.063 [main] INFO  testCases.TC_002_LoginTest - Providing Login Details..
 10:28:32.496 [main] INFO  testCases.TC_002_LoginTest - Clicked on Login Button..
 10:28:33.068 [main] INFO  testCases.TC_002_LoginTest - Finished TC-002 Login Test..
+14:50:39.447 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** TC_001 Account Registration Test ****
+14:50:39.658 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on My ACcount
+14:50:40.239 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on Register
+14:50:40.244 [main] INFO  testCases.TC_001_AccountRegistrationTest - PRoviding Customer Data
+14:50:41.065 [main] INFO  testCases.TC_001_AccountRegistrationTest - CLicked on Continue
+14:50:41.785 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating Expected Message
+14:50:41.788 [main] INFO  testCases.TC_001_AccountRegistrationTest - Finised TC-001 Accoutn Registration Test
+14:50:50.679 [main] INFO  testCases.TC_002_LoginTest - Starting TC_002_Login Test..
+14:50:50.819 [main] INFO  testCases.TC_002_LoginTest - Clicked on My Account
+14:50:51.402 [main] INFO  testCases.TC_002_LoginTest - Clicked on Login
+14:50:51.405 [main] INFO  testCases.TC_002_LoginTest - Providing Login Details..
+14:50:51.836 [main] INFO  testCases.TC_002_LoginTest - Clicked on Login Button..
+14:50:52.445 [main] INFO  testCases.TC_002_LoginTest - Finished TC-002 Login Test..
+15:21:09.280 [main] INFO  testCases.TC_001_AccountRegistrationTest - **** TC_001 Account Registration Test ****
+15:21:09.524 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on My ACcount
+15:21:10.088 [main] INFO  testCases.TC_001_AccountRegistrationTest - Clicked on Register
+15:21:10.091 [main] INFO  testCases.TC_001_AccountRegistrationTest - PRoviding Customer Data
+15:21:10.899 [main] INFO  testCases.TC_001_AccountRegistrationTest - CLicked on Continue
+15:21:11.563 [main] INFO  testCases.TC_001_AccountRegistrationTest - Validating Expected Message
+15:21:11.566 [main] INFO  testCases.TC_001_AccountRegistrationTest - Finised TC-001 Accoutn Registration Test
+15:21:20.275 [main] INFO  testCases.TC_002_LoginTest - Starting TC_002_Login Test..
+15:21:20.409 [main] INFO  testCases.TC_002_LoginTest - Clicked on My Account
+15:21:20.973 [main] INFO  testCases.TC_002_LoginTest - Clicked on Login
+15:21:20.975 [main] INFO  testCases.TC_002_LoginTest - Providing Login Details..
+15:21:21.365 [main] INFO  testCases.TC_002_LoginTest - Clicked on Login Button..
+15:21:21.920 [main] INFO  testCases.TC_002_LoginTest - Finished TC-002 Login Test..
+15:21:30.630 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:22:19.867 [main] INFO  testCases.TC_005_AddToCartPageTest -  Starting TC_005_AddToCartPageTest 
+15:27:57.063 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:36:52.747 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:37:57.866 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:39:31.106 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:40:40.400 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:42:56.015 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:46:54.386 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:48:33.479 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:50:50.408 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+15:51:52.161 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+16:16:38.857 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+16:17:50.655 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
+06:02:23.159 [main] INFO  testCases.TC_004_SearchProductTest -  Starting TC_004_SearchProductTest 
