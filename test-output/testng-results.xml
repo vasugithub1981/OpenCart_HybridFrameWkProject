@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-28T16:17:44 AEDT" name="OpencartSuite" finished-at="2022-12-28T16:18:19 AEDT" duration-ms="34709">
+  <suite started-at="2023-01-02T19:47:26 AEDT" name="OpencartSuite" finished-at="2023-01-02T19:47:50 AEDT" duration-ms="24466">
     <groups>
+      <group name="Master">
+        <method signature="TC_001_AccountRegistrationTest.test_account_Registration()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@437da279]" name="test_account_Registration" class="testCases.TC_001_AccountRegistrationTest"/>
+        <method signature="TC_002_LoginTest.test_login()[pri:0, instance:testCases.TC_002_LoginTest@71a8adcf]" name="test_login" class="testCases.TC_002_LoginTest"/>
+      </group> <!-- Master -->
+      <group name="Sanity">
+        <method signature="TC_002_LoginTest.test_login()[pri:0, instance:testCases.TC_002_LoginTest@71a8adcf]" name="test_login" class="testCases.TC_002_LoginTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TC_001_AccountRegistrationTest.test_account_Registration()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@437da279]" name="test_account_Registration" class="testCases.TC_001_AccountRegistrationTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2022-12-28T16:17:44 AEDT" name="OpencartTest" finished-at="2022-12-28T16:18:19 AEDT" duration-ms="34709">
-      <class name="testCases.TC_004_SearchProductTest">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_004_SearchProductTest@7bab3f1a]" started-at="2022-12-28T16:17:45 AEDT" name="setup" finished-at="2022-12-28T16:17:50 AEDT" duration-ms="5431" status="PASS">
+    <test started-at="2023-01-02T19:47:26 AEDT" name="OpencartTest" finished-at="2023-01-02T19:47:50 AEDT" duration-ms="24466">
+      <class name="testCases.TC_001_AccountRegistrationTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_001_AccountRegistrationTest@437da279]" started-at="2023-01-02T19:47:26 AEDT" name="setup" finished-at="2023-01-02T19:47:32 AEDT" duration-ms="5312" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,20 +28,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="test_productSearch()[pri:0, instance:testCases.TC_004_SearchProductTest@7bab3f1a]" started-at="2022-12-28T16:17:50 AEDT" name="test_productSearch" finished-at="2022-12-28T16:18:13 AEDT" duration-ms="23133" status="FAIL">
+        <test-method signature="test_account_Registration()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@437da279]" started-at="2023-01-02T19:47:32 AEDT" name="test_account_Registration" finished-at="2023-01-02T19:47:34 AEDT" duration-ms="2443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_account_Registration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_001_AccountRegistrationTest@437da279]" started-at="2023-01-02T19:47:34 AEDT" name="tearDown" finished-at="2023-01-02T19:47:40 AEDT" duration-ms="6095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testCases.TC_001_AccountRegistrationTest -->
+      <class name="testCases.TC_002_LoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testCases.TC_002_LoginTest@71a8adcf]" started-at="2023-01-02T19:47:40 AEDT" name="setup" finished-at="2023-01-02T19:47:43 AEDT" duration-ms="2605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="test_login()[pri:0, instance:testCases.TC_002_LoginTest@71a8adcf]" started-at="2023-01-02T19:47:43 AEDT" name="test_login" finished-at="2023-01-02T19:47:44 AEDT" duration-ms="928" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:819)
-at org.testng.Assert.assertEquals(Assert.java:829)
-at testCases.TC_004_SearchProductTest.test_productSearch(TC_004_SearchProductTest.java:32)
+at org.testng.Assert.fail(Assert.java:106)
+at testCases.TC_002_LoginTest.test_login(TC_002_LoginTest.java:42)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,12 +92,12 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_productSearch -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_004_SearchProductTest@7bab3f1a]" started-at="2022-12-28T16:18:13 AEDT" name="tearDown" finished-at="2022-12-28T16:18:19 AEDT" duration-ms="5328" status="PASS">
+        </test-method> <!-- test_login -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testCases.TC_002_LoginTest@71a8adcf]" started-at="2023-01-02T19:47:44 AEDT" name="tearDown" finished-at="2023-01-02T19:47:50 AEDT" duration-ms="6218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- testCases.TC_004_SearchProductTest -->
+      </class> <!-- testCases.TC_002_LoginTest -->
     </test> <!-- OpencartTest -->
   </suite> <!-- OpencartSuite -->
 </testng-results>

@@ -29,7 +29,7 @@ public class TC_002_LoginTest extends BaseClass
 		LoginPage lp=new LoginPage(driver);
 		logger.info("Providing Login Details..");
 		lp.setEmail(rb.getString("email")); //getting from config.properties
-		lp.setPassword(rb.getString("pwd"));
+		lp.setPassword(rb.getString("pwd1")); // on purpose to fail
 		lp.clickLogin();
 		logger.info("Clicked on Login Button..");
 		
